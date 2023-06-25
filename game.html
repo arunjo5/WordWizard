@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WordWizard</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<body2>
+  <div id="gamePage" class="page">
+    <img id="logo" src="/Users/user/Downloads/logo.png">
+    <div id="score">Score: 0</div>
+    <div id="main" class="hero"> 
+    <div id="timer">Time remaining: 15s </div> 
+    <p>Click "Play Audio" to hear the word and enter it in lowercase once you have typed it</p>
+</div>
+    <easybutton id="audioButton">Play Audio</easybutton>
+    <input type="text" id="wordInput" placeholder="Enter the word">
+    <mediumbutton id="nextButton">Next</mediumbutton>
+    <hardbutton onclick= "location.href= 'score.html'" id="stopButton">Stop</hardbutton>
+    <darkmode id="darkModeButton" onclick="toggleDarkMode()">Dark/Light Mode</darkmode>
+
+    <p id="result"></p>
+    <img align = "center" src="/Users/user/Downloads/cauldron.png" width="415.5" height="480">
+    <div class = "bubbles">
+      <img src = "/Users/user/Downloads/bubbles.png">
+      <img src = "/Users/user/Downloads/bubbles.png">
+      <img src = "/Users/user/Downloads/bubbles.png">
+      <img src = "/Users/user/Downloads/bubbles.png">
+      <img src = "/Users/user/Downloads/bubbles.png">
+      <img src = "/Users/user/Downloads/bubbles.png">
+      <img src = "/Users/user/Downloads/bubbles.png">
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body2>
+</html>

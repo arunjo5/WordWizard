@@ -1,0 +1,217 @@
+
+#logo {
+  position: absolute;
+  top: -85px;
+  left: -5px;
+  width: 300px;
+}
+  
+  body1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px;
+    margin: 80px;
+    padding: 0;
+  }
+  
+  body2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .page {
+    display: none;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .bubbles img {
+    width: 50px;
+    animation: bubble 5s linear infinite;
+    margin-left: 15px;
+
+  }
+  .bubbles {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -70px;
+  }
+
+   
+
+  @keyframes bubble {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-80vh);
+      opacity: 0;
+    }
+  }
+  
+  
+.bubbles img:nth-child(1) {
+    width: 50px;
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2) {
+    width: 55px;
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+    width: 40px;
+    animation-delay: 2.5s;
+}
+.bubbles img:nth-child(4) {
+    width: 57px;
+    animation-delay: 3.5s;
+}
+.bubbles img:nth-child(5) {
+  width: 57px;
+  animation-delay: 1.5s;
+}
+.bubbles img:nth-child(6) {
+    width: 59px;
+    animation-delay: 4.7s;
+}
+.bubbles img:nth-child(7) {
+    width: 41px;
+    animation-delay: 5.7s;
+}
+
+  .difficultyLink {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  #gamePage {
+    display: none;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  #score {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  easybutton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #5382e0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  mediumbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #6fc647;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  hardbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #c15641;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  darkmode {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #6c309d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+
+ /* Existing styles */
+
+.dark-mode {
+  background-color: #3A3B3C;
+}
+
+.dark-mode body {
+  background-color: #3A3B3C;
+}
+
+body.dark-mode {
+  background-color: #3A3B3C;
+  color: #fff;
+}
+
+.dark-mode .page {
+  background-color: #3A3B3C;
+  color: #fff;
+}
+
