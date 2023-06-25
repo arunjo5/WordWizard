@@ -19,15 +19,18 @@ const wordLists = {
 
     const selectedWord = currentWord.toLowerCase();
 
-    const audioUrl =    `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(selectedWord)}`;
-    const audio = new Audio(audioUrl);
-    
-    audio.addEventListener("ended", () => {
-      audioButton.disabled = false;
-    });
+    // const audioUrl =    `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(selectedWord)}`;
+    // const audio = new Audio(audioUrl);
+    var msg = new SpeechSynthesisUtterance();
+     msg.text = currentWord;
+     window.speechSynthesis.speak(msg);
+
+    // audio.addEventListener("ended", () => {
+    //   audioButton.disabled = false;
+    // });
   
   
-    audio.play();
+    // audio.play();
   }
   
   
